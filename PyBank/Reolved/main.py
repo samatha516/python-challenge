@@ -29,11 +29,11 @@ with open(budget_file_path) as budget_file:
 		#grab all the profit/loss values into revenue list and cast it to int.
 		revenue.append(int(row[1]))
 		
-		# The total number of months included in the dataset
-		total_months = len(months)
+# The total number of months included in the dataset
+total_months = len(months)
 
-		# The net total amount of "Profit/Losses" over the entire period
-		total_profit_loss = sum(revenue)
+# The net total amount of "Profit/Losses" over the entire period
+total_profit_loss = sum(revenue)
 
 for i in range(len(revenue) - 1):
 	profit_loss = revenue[i+1] - revenue[i]
